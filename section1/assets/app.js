@@ -66,14 +66,12 @@ for (k = 5; k >= 0; k--){
     }
 }
 
+// While Loop
+// while(condition){
+//     code to run
+// }
 
-    // While Loop
-var number = prompt("Enter Your Age")
-    while (number == ""){
-        alert("You did Not Choose a Number")
-        var number = prompt("Enter Your Number")
-    }
 
-    if (number > 18){
-        alert("Congrats")
-    }
+
+
+
