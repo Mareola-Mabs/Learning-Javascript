@@ -1,16 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Learning Javascritp</title>
-        <meta name="description" content="">
+        <title>Learning Javascript</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./assets/main.css" type="text/css">
+        <meta name="description" content="">
+        <link rel="stylesheet" type="text/css" href="./assets/main.css">
+        <link rel="icon" type="image/x-icon" href="">
     </head>
     <body>
 
-        
+      <header>
+        <h2>Cost App</h2>
+      </header>
+      <hr>
+
+      <div class="container">
+
+        <section>
+          <small>Item</small>
+            <span>
+              <input type="checkbox" class="checkbox" name="" value="" id="football">
+              <label for="football">Football</label>
+            </span>
+        </section>
+
+        <section>
+          <small>Qty</small>
+            <span>
+              <input type="number" class="qty" name="" value="" id="qty">
+            </span>
+        </section>
+
+        <section>
+          <small>Price</small>
+            <span>
+              <input type="text" class="price" name="" value="" id="price" disabled>
+            </span>
+        </section>
+
+        <section>
+          <small>Cost</small>
+          <span>
+            <input type="number" disabled class="cost" name="" value="" id="cost">
+          </span>
+        </section>
+      
+      </div>
+
+      <div>
+        <p class="jj"></p>
+      </div>
+
+      <!-- Calculator Section -->
+       <div class="calculator">
+
+        <form action="">
+          <section>
+            <small>Number1</small>
+              <input type="number" name="" id="n1">
+          </section>
+  
+          <section>
+            <small>Number2</small>
+              <input type="number" name="" id="n2">
+          </section>
+  
+          <section>
+            <button id="addition" type="button">+</button>
+            <button id="multiply" type="button">*</button>
+            <button id="subtract" type="button">-</button>
+            <button id="divide" type="button">/</button>
+          </section>
+  
+         </div>
+  
+         <div>
+          <p>
+            <b>Result</b><span id="rs"></span>
+          </p>
+         </div>
+
+         <button type="reset">Clear</button>
+  
+        </form>
+       
+
+
+
         <script src="./assets/app.js" async defer></script>
     </body>
 </html>

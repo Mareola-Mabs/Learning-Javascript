@@ -1,0 +1,17 @@
+.container                  {display: grid;
+                            grid-template-columns: repeat(4, 1fr);
+                            gap: 20px;}
+
+header                      {display: flex;
+                            justify-content: center;}
+
+hr                          {margin-bottom: 30px;}
+
+.container section          {display: flex;
+                            flex-direction: column;}
+
+.container input[type="text"]{width: 100%;}
+
+
+
+
