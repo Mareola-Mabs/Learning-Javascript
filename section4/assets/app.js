@@ -105,10 +105,42 @@ console.log(sum)
 const d = new Date("2024 06 24")
 const f = d.toDateString()
 const g = d.toUTCString()
-const h = d.toISOString()
+const h = d.toISOString() 
 console.log(f)
 console.log(g)
 console.log(h)
+
+const ap = new Date()
+const cp = ap.getFullYear()+2
+console.log(cp)
+
+const dap = new Date()
+var dap1 = dap.getFullYear(dap.setFullYear(2022))
+console.log(dap1)
+
+// Math Object in Javascript
+var myValue = 49
+var squareRoot = Math.sqrt(myValue)
+console.log(squareRoot)
+
+// KeyPoint Values in Javascript
+var numbers01 = (20,30,40)
+var numberST = Math.max(numbers01)
+console.log(numberST)
+
+// Storing Console and Alert Messages in Memory
+const xty = console.log
+const xtx = alert
+xty(`${xty}`)
+
+// Javascript Typeof
+xty(typeof undefined)
+
+
+
+
+
+
 
 
 
