@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Bitxbase CBT Software</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <link rel="stylesheet" type="text/css" href="./assets/main.css">
+        <link rel="icon" type="image/x-icon" href="">
+    </head>
+    <body>
+
+        <header>
+            <h1>BITXBASE TECHNOLOGY LIMITED</h1>
+            <P>148, Olojo Drive, HighTaste Bus Stop.
+            </P>
+            <p>Tel:08145507839 ,090409320797</p>
+        </header>
+
+        <main>
+            <div class="cbt__main">
+                <!-- Question1 -->
+                <div class="cbt__question1">
+                    <span class="cbt__question">
+                        <b>1)._____ is the name of the president of the federal republic of Nigeria?</b>
+                    </span><br>
+                    <span class="cbt__answers">
+
+                        <input type="radio" name="question1" id="q1option1">
+                        <label for="q1option1">Bola Tinubu</label><br>
+
+                        <input type="radio" name="question1" id="q1option2">
+                        <label for="q1option2">Jesse Daniel</label><br>
+
+                        <input type="radio" name="question1" id="q1option3">
+                        <label for="q1option3">Ibukunola Mabawonku</label><br>
+
+                        <input type="radio" name="question1" id="q1option4">
+                        <label for="q1option4">Olusegun Obasanjo</label><br>
+
+                        <input type="radio" name="question1" id="q1option5">
+                        <label for="q1option5">Mark Zuckerberg</label><br>
+
+                    </span>
+                </div>
+                <!-- Question 2 -->
+                <div class="cbt__question2">
+                    <span class="cbt__question">
+                        <b>2)._____ is the name of this CBT developer?</b>
+                    </span><br>
+                    <span class="cbt__answers">
+
+                        <input type="radio" name="question2" id="q2option1">
+                        <label for="q2option1">Segun Ademola</label><br>
+
+                        <input type="radio" name="question2" id="q2option2">
+                        <label for="q2option2">Jesse Daniel</label><br>
+
+                        <input type="radio" name="question2" id="q2option3">
+                        <label for="q2option3">Ibukunola Mabawonku</label><br>
+
+                        <input type="radio" name="question2" id="q2option4">
+                        <label for="q2option4">Mike Faraday</label><br>
+
+                        <input type="radio" name="question2" id="q2option5">
+                        <label for="q2option5">Mark Zuckerberg</label><br>
+
+                    </span>
+                </div>
+                <!-- Question 3 -->
+                <div class="cbt__question3">
+                    <span class="cbt__question">
+                        <b>3)._____ is the name of governor of Ondo State?</b>
+                    </span><br>
+                    <span class="cbt__answers">
+
+                        <input type="radio" name="question3" id="q3option1">
+                        <label for="q3option1">Daniel Mark</label><br>
+
+                        <input type="radio" name="question3" id="q3option2">
+                        <label for="q3option2">Tunde Ednut</label><br>
+
+                        <input type="radio" name="question3" id="q3option3">
+                        <label for="q3option3">Ibukunola Mabawonku</label><br>
+
+                        <input type="radio" name="question3" id="q3option4">
+                        <label for="q3option4">Mike Faraday</label><br>
+
+                        <input type="radio" name="question3" id="q3option5">
+                        <label for="q3option5">Dele Ali</label><br>
+
+                    </span>
+                </div>
+                <!-- Question 4 -->
+                <div class="cbt__question4">
+                    <span class="cbt__question">
+                        <b>4)._____ is the name a Computer?</b>
+                    </span><br>
+                    <span class="cbt__answers">
+
+                        <input type="radio" name="question4" id="q4option1">
+                        <label for="q4option1">An electronic machine</label><br>
+
+                        <input type="radio" name="question4" id="q4option2">
+                        <label for="q4option2">A computing device</label><br>
+
+                        <input type="radio" name="question4" id="q4option3">
+                        <label for="q4option3">All of the above</label><br>
+
+                        <input type="radio" name="question4" id="q4option4">
+                        <label for="q4option4">A laptop</label><br>
+
+                        <input type="radio" name="question4" id="q4option5">
+                        <label for="q4option5">A phone</label><br>
+
+                    </span>
+                </div>
+                
+            </div>
+
+            <div class="cbt__label">COMPUTER BASED TEST</div>
+            <button class="cbt__prev">PREV</button>
+            <button class="cbt__next">NEXT</button>
+        </main>
+
+        <div class="cbt__submit">
+            <button class="submit">
+                Submit
+            </button>
+        </div>
+        <div class="cbt__remark">
+
+        </div>
+
+
+        <div class="others">
+            <input type="radio" name="q" id="qa" class="label"><label for="qa" >Dad</label>
+            <input type="radio" name="q" id="qb" class="label answer"><label for="qb" >Mum</label>
+            <input type="radio" value="" name="q" id="qc" class="label"><label for="qc" >Sis</label>
+        </div>
+        <button class="submit2">
+            Submit
+        </button>
+
+        <footer>
+            <p>Powered by Mareola Dev</p>
+        </footer>
+
+      
+
+
+        <script>
+            const labels = document.querySelectorAll('.label')
+            const submit2 = document.querySelector('.submit2')
+
+            submit2.addEventListener('click',()=>{
+                for(const rb of labels){
+                    if (rb.classList.contains("answer").checked){
+                        console.log("Correct")
+                        break;
+                    }
+                    else{
+                        console.log("Wrong")
+                    }
+                }
+            })
+        </script>
+        <script src="./assets/app.js" async defer></script>
+    </body>
+</html>
