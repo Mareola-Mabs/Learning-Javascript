@@ -1,0 +1,78 @@
+/* CSS Resets */
+* , html                            {margin: 0;
+                                    box-sizing: border-box;}
+
+body                                {padding: 10px;
+                                    background: skyblue;}
+
+/* End of Resets */
+
+
+/* Styling the Header */
+header                              {display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;}
+
+header p:nth-of-type(2)             {font-weight: bold;
+                                    margin-top: 5px;}
+/* End of Header */
+
+/* Styling the Main */
+main                                {width: 100%;
+                                    background: #ECECEC;
+                                    border-radius: 10px;
+                                    margin-top: 10px;
+                                    padding: 20px;
+                                    position: relative;}
+
+
+main .cbt__label                    {position: absolute;
+                                    background: #000;
+                                    color: #fff;
+                                    top: -10px;
+                                    right: 0;
+                                    padding: 10px;
+                                    border-radius: 10px;}
+
+main button                         {background: #000;
+                                    color: #fff;
+                                    border: none;
+                                    font-size: 0.7rem;
+                                    width: 80px;
+                                    border-radius: 3px;
+                                    height: 15px;
+                                    cursor: pointer;}
+
+main button.cbt__next               {position: absolute;
+                                    right: 5px;
+                                    bottom: -5px;}
+
+main button.cbt__prev               {position: absolute;
+                                    right: 88px;
+                                    bottom: -5px;
+                                    display: none;}
+
+main input                          {margin-top: 10px;}
+
+main input:nth-of-type(1)           {margin-top: 20px;}
+
+main label                          {font-size: 0.8rem;}
+
+main .cbt__question2, .cbt__question3, .cbt__question4, .cbt__question5                
+                                    {display: none;}
+/* End of Main */
+
+/* The Submit Button */
+button.submit                       {cursor: pointer;}
+
+/* The Remark Div */
+.cbt__remark                        {margin-top: 100px;
+                                    font-weight: bold;}
+
+/* Styling of Footer */
+footer                              {position: absolute;
+                                    bottom: 0;
+                                    right: 10px;
+                                    font-weight: bold;}
+/* End of Footer */
