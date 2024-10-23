@@ -135,9 +135,9 @@
 
 
         <div class="others">
-            <input type="radio" name="q" id="qa" class="label"><label for="qa" >Dad</label>
-            <input type="radio" name="q" id="qb" class="label answer"><label for="qb" >Mum</label>
-            <input type="radio" value="" name="q" id="qc" class="label"><label for="qc" >Sis</label>
+            <input type="radio" name="q" class="label"><label>Dad</label>
+            <input type="radio" name="q" class="label" value="answer"><label>Mum</label>
+            <input type="radio" name="q" class="label"><label>Sis</label>
         </div>
         <button class="submit2">
             Submit
@@ -153,16 +153,31 @@
         <script>
             const labels = document.querySelectorAll('.label')
             const submit2 = document.querySelector('.submit2')
+            const others = document.querySelector('.others')
+            var marks = 0
 
             submit2.addEventListener('click',()=>{
-                for(const rb of labels){
-                    if (rb.classList.contains("answer").checked){
-                        console.log("Correct")
-                        break;
+                let confirmed2 = confirm("Do you Want to Submit?")
+                if(confirmed2){
+                    others.style.display="none"
+                    submit2.style.display="none"
+                    for(var q = 0; q<labels.length; q++){
+                    if (labels[q].checked){
+                        var jad = labels[q].value
+                        if(jad == "answer"){
+                            marks += 2
+                            console.log("Your Score is; "+marks)
+                        }
+                        else{
+                            console.log("Your Score is; "+marks)
+                        }
                     }
-                    else{
-                        console.log("Wrong")
-                    }
+
+
+                }
+                }
+                else{
+                    return false
                 }
             })
         </script>
