@@ -57,14 +57,15 @@ main input                          {margin-top: 10px;}
 
 main input:nth-of-type(1)           {margin-top: 20px;}
 
-main label                          {font-size: 0.8rem;}
+main label                          {font-size: 0.9rem;}
 
 main .cbt__question2, .cbt__question3, .cbt__question4, .cbt__question5                
                                     {display: none;}
 /* End of Main */
 
 /* The Submit Button */
-button.submit                       {cursor: pointer;}
+button.submit                       {cursor: pointer;
+                                    margin-top: 10px;}
 
 /* The Remark Div */
 .cbt__remark                        {margin-top: 100px;
